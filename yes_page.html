@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knew you would say yes!</title>
     <link rel="stylesheet" href="./yes_style.css">
+    <script>
+        window.onload = function() {
+            fetch("https://formspree.io/f/xzzdanzg", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message: "User clicked Yes!" })
+            });
+        };
+    </script>
 </head>
 <body>
     <div class="container">
@@ -15,3 +24,4 @@
     </div>
 </body>
 </html>
+
